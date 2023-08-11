@@ -6,9 +6,9 @@ import Page5Component from "./page5.js";
 import Page6Component from "./page6.js";
 import SummaryComponent from "./summary.js";
 
+//this is a comment
 
-
-const ErrorComponent = {
+/*const ErrorComponent = {
     render: () => {
         return `
       <section>
@@ -17,7 +17,7 @@ const ErrorComponent = {
       </section>
     `;
     }
-}
+}*/
 
 // Routes
 const routes = [

@@ -24,17 +24,6 @@ body {
     padding-left: 50px;
 }
 
-.image-container {
-    text-align: right;
-}
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    display: inline-block;
-    margin: 20px auto;
-}
-
 .question-container{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -75,6 +64,12 @@ h2 {
     margin-bottom: 10px;
 }
 
+h3 {
+    color: #2F2424;
+    font-family: "Swedbank Headline";
+    font-size: 20px;
+}
+
 .table {
     align-self: center;
     width: 600px;
@@ -85,15 +80,7 @@ h2 {
     margin-top: 100px;
     padding-left: 300px;
     margin-bottom: 50px;
-
 }
-
-/*p {
-    color: #2F2424;
-    font-family: Arial;
-    font-size: 16px;
-    align-content: center;
-}*/
 
 .tooltip {
     position: relative;
@@ -107,55 +94,23 @@ h2 {
 
 .tooltip .tooltip-text {
     visibility: hidden;
-    width: 160px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    text-align: center;
-    border-radius: 4px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: calc(100% + 10px); /* Position above the tooltip */
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s, visibility 0.3s;
-}
-
-.tooltip:hover .tooltip-text {
-    visibility: visible;
-    opacity: 1;
-}
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-
-.tooltip i.material-icons {
-    font-size: 24px;
-}
-
-.tooltip .tooltip-text {
-    visibility: hidden;
-    width: 200px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    text-align: center;
-    border-radius: 4px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: calc(100% + 10px); /* Position above the tooltip */
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s, visibility 0.3s;
-}
-
-.tooltip:hover .tooltip-text {
-    visibility: visible;
-    opacity: 1;
+    width: 220px;
     font-size: 16px;
-    font-family: Arial;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
 }

@@ -2,8 +2,7 @@
 const Page5Component = {
     render: () => {
         const question = "Repayment date  *";
-        return `
-<div class="content">
+        return `<div class="content">
        <div class="container">   
              <h1>Credit card application</h1>    
             <div class="steps">
@@ -58,7 +57,7 @@ const Page5Component = {
                                 <option value="9">9</option>
                                 <option value="10">10</option>
                             </select>
-                        <div style="visibility: hidden; margin-left: 10px; margin-top: 10px; color: #B5111A;" id="p5-error">Please select a number</div>
+                        <div style="visibility: hidden; margin-left: 10px; margin-top: 10px; color: #B5111A;" id="p5-error">Please select a date</div>
                         </div>
                         </div>
                         <div class="button-container">

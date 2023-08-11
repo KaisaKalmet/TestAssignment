@@ -43,11 +43,11 @@ const SummaryComponent = {
                                 </tr>
                                 <tr>
                                     <td>Credit limit</td>
-                                    <td id="value1"> EUR</td>
+                                    <td id="value1"></td>
                                 </tr>
                                 <tr>
                                     <td>Monthly income after taxes</td>
-                                    <td id="value2" EUR> EUR</td>
+                                    <td id="value2"></td>
                                 </tr>
                                 <tr>
                                     <td>Repayment date</td>
@@ -61,14 +61,13 @@ const SummaryComponent = {
                         </table>
                 </div>
             </div>
-            
-            <form>
-            <div class="additional-info">
-                <p><label for="textarea">Please add additional details and comments:</label></p>
-                <textarea id="textarea" name="textarea-box" rows="4" cols="50"></textarea><br>
-                <input type="submit" value="Submit">
-            </div>
-            </form>
+                    <form>
+                    <div class="additional-info">
+                        <p><label for="textarea">Please add additional details and comments:</label></p>
+                        <textarea id="textarea" name="textarea-box" rows="4" cols="50"></textarea><br>
+                        <input type="submit" value="Submit">
+                    </div>
+                    </form>
                          <form>
                             <fieldset class="checkbox">
                                 <legend>Terms and conditions *</legend>
@@ -81,10 +80,6 @@ const SummaryComponent = {
                                 </div>
                             </fieldset>
                         </form>
-                        
-                        
-                        
-                        
                         <div style="visibility: hidden; margin-left: 10px; margin-top: 10px; color: #B5111A;" id="p7-error">Please mark that you agree with terms and conditions.</div>
                         <div class="button-container">
                             <button class="btn btn-secondary btn-lg" type="button" id="goback"><span class="material-icons-outlined">chevron_left </span> Back</button>
@@ -102,13 +97,10 @@ const SummaryComponent = {
 
         button1.addEventListener('click', (event) => {
             event.preventDefault();
-            console.log('Button clicked!');
             window.location.hash = "/page6";
         });
         button2.addEventListener('click', (event) => {
             event.preventDefault();
-            //console.log('Button clicked!');
-            //let name = p6name.value;
 
             if (checkbox.checked) {
                 button2.classList.remove("disabled")

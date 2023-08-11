@@ -2,8 +2,7 @@
 const Page3Component = {
     render: () => {
         const question = "Credit limit *";
-        return `
-    <div class="content">
+        return `<div class="content">
        <div class="container">
              <h1>Credit card application</h1>
         <div class="steps">
@@ -50,8 +49,7 @@ const Page3Component = {
             </div>
         </div>
         </div>
-    </div>
-    `;
+    </div>`;
     },
     attachEvents: () => {
         const button1 = document.getElementById('goback');
@@ -67,21 +65,12 @@ const Page3Component = {
 
         button1.addEventListener('click', (event) => {
             event.preventDefault();
-            console.log('Button clicked!');
             window.location.hash = "/page2";
         });
         button2.addEventListener('click', (event) => {
             event.preventDefault();
-            console.log('Button clicked!');
             let value = p3value.value;
             let onlyNumb = Boolean(value.match(/^[0-9]*$/));
-            /*if (name.length === 0 || onlyChar === false) {
-                p2error.style.visibility = "visible"
-            } else {
-                localStorage.setItem('p2-name', name);
-                console.log(name)
-                //window.location.hash = "/page4";
-            }*/
             if (value > 999 && value < 20001 && onlyNumb === true) {
                 localStorage.setItem('p3-value', value);
                 window.location.hash = "/page4";

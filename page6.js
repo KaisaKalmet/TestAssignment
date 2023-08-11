@@ -52,7 +52,7 @@ const Page6Component = {
                         </fieldset>
                         </form>  
                         </div>
-                        <div style="visibility: hidden; margin-left: 10px; margin-top: 10px; color: #B5111A;" id="p6-error">Please enter a number</div>   
+                        <div style="visibility: hidden; margin-left: 10px; margin-top: 10px; color: #B5111A;" id="p6-error">Please select option</div>   
                         <div class="button-container">
                             <button class="btn btn-secondary btn-lg" type="button" id="goback"><span class="material-icons-outlined">chevron_left </span> Back</button>
                             <button class="btn btn-primary btn-lg" type="button" id="gonext">Next <span class="material-icons-outlined">chevron_right </span></button>
@@ -94,7 +94,6 @@ const Page6Component = {
 
         button2.addEventListener('click', (event) => {
             event.preventDefault();
-            //const selectedOption = localStorage.getItem('p6-option');
             if (selectedOption === 'By post' || selectedOption === 'To branch') {
                 window.location.hash = "/page7";
             } else {
@@ -102,19 +101,6 @@ const Page6Component = {
                 button2.classList.add("disabled")
             }
         });
-        /*        p6name.addEventListener('input', (event) => {
-                    //event.preventDefault();
-                    if (p6name.value.length > 2 && onlyChar === true) {
-                        button2.classList.remove("disabled")
-                        p6error.style.visibility = "hidden"
-                    } else if (name.length === 0 || onlyChar === false) {
-                        p6error.style.visibility = "visible"
-                        button2.classList.add("disabled")
-                    }
-                    let text = p6name.value;
-                    console.log(text)
-                });*/
-
     },
     summaryAnsw: () => {}
 }

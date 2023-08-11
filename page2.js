@@ -1,9 +1,8 @@
 
 const Page2Component = {
     render: () => {
-        const question = "Your first and last name *";
-        return `
-    <div class="content">
+        const question = "First and last name *";
+        return `<div class="content">
        <div class="container">
             <h1>Credit card application</h1>
         <div class="steps">
@@ -49,8 +48,7 @@ const Page2Component = {
                 </div>
             </div>
         </div>
-    </div>
-    `;
+    </div>`;
     },
 
     attachEvents: () => {
@@ -67,21 +65,12 @@ const Page2Component = {
 
         button1.addEventListener('click', (event) => {
             event.preventDefault();
-            console.log('Button clicked!');
             window.location.hash = "/";
         });
         button2.addEventListener('click', (event) => {
             event.preventDefault();
-            console.log('Button clicked!');
             let name = p2name.value;
             let onlyChar = Boolean(name.match(/^[A-Za-z\s]*$/));
-            /*if (name.length === 0 || onlyChar === false) {
-                p2error.style.visibility = "visible"
-            } else {
-                localStorage.setItem('p2-name', name);
-                console.log(name)
-                //window.location.hash = "/page4";
-            }*/
             if (name.length > 2 && onlyChar === true) {
                 localStorage.setItem('p2-name', name);
                 console.log(name)

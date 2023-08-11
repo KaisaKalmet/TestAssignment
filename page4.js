@@ -2,8 +2,7 @@
 const Page4Component = {
     render: () => {
         const question = "Monthly income after taxes *";
-        return `
-<div class="content">
+        return `<div class="content">
        <div class="container">  
              <h1>Credit card application</h1>     
             <div class="steps">
@@ -49,8 +48,7 @@ const Page4Component = {
                     </div>
                 </div>
             </div>
-        </div>
-    `;
+        </div>`;
     },
     attachEvents: () => {
         const button1 = document.getElementById('goback');
@@ -66,21 +64,12 @@ const Page4Component = {
 
         button1.addEventListener('click', (event) => {
             event.preventDefault();
-            console.log('Button clicked!');
             window.location.hash = "/page3";
         });
         button2.addEventListener('click', (event) => {
             event.preventDefault();
-            console.log('Button clicked!');
             let netoValue = p4value.value;
             let onlyNumb = Boolean(netoValue.match(/^[0-9]*$/));
-            /*if (name.length === 0 || onlyChar === false) {
-                p2error.style.visibility = "visible"
-            } else {
-                localStorage.setItem('p2-name', name);
-                console.log(name)
-                //window.location.hash = "/page4";
-            }*/
             if (netoValue.length > 2 && onlyNumb === true) {
                 localStorage.setItem('p4-value', netoValue);
                 console.log(netoValue)

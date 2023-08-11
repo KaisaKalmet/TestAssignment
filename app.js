@@ -6,18 +6,6 @@ import Page5Component from "./page5.js";
 import Page6Component from "./page6.js";
 import SummaryComponent from "./summary.js";
 
-//this is a comment
-
-/*const ErrorComponent = {
-    render: () => {
-        return `
-      <section>
-        <h1>Error</h1>
-        <p>This is just a test</p>
-      </section>
-    `;
-    }
-}*/
 
 // Routes
 const routes = [
@@ -34,7 +22,7 @@ const router = () => {
     // Find the component based on the current path
     const path = parseLocation();
     // If there's no matching route, get the "Error" component
-    const { component = ErrorComponent } = findComponentByPath(path, routes) || {};
+    const { component } = findComponentByPath(path, routes) || {};
     // Render the component in the "app" placeholder
     document.getElementById('app').innerHTML = component.render();
     component.attachEvents();
